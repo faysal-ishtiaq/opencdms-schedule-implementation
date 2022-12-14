@@ -1,0 +1,3 @@
+pygeoapi
+git+https://github.com/faysal-ishtiaq/opencdms-core@opencdms-schedule
+git+https://github.com/faysal-ishtiaq/opencdms-backup@pygeoapi-backup-process
