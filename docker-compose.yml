@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  db:
+    image: postgres:13
+    container_name: db
+    environment:
+      - POSTGRES_PASSWORD=password
+
+  pygeoapi:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: pygeoapi
+    ports:
+      - "5000:5000"
+    volumes:
+      - "${PWD}:/opt/project"
